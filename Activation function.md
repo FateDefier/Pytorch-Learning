@@ -249,7 +249,7 @@ loss_fn = nn.BCELoss()
 
 ## 五、实战对比：7 种激活函数在糖尿病数据集上的表现
 
-代码文件：[8. Multiple_Dimentional_Logistic_Regression.py](8.%20Multiple_Dimentional_Logistic_Regression.py)
+代码文件：[08. Multiple_Dimentional_Logistic_Regression.py](08.%20Multiple_Dimentional_Logistic_Regression.py)
 
 | 激活函数 | 训练 Loss（8 轮后） | 测试准确率 | 评价 |
 |:--------:|:-------------------:|:----------:|------|

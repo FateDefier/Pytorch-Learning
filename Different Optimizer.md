@@ -226,7 +226,7 @@ optimizer.step(closure)
 
 **测试设置**：30 行数据，目标 `y=2x`（即 w=2, b=0, y_pred=8），epoch=50，默认超参数。
 
-代码文件：[3. Stochastic_Gradient_Decent.py](3.%20Stochastic_Gradient_Decent.py)
+代码文件：[03. Stochastic_Gradient_Decent.py](03.%20Stochastic_Gradient_Decent.py)
 
 ### 结果总览
 

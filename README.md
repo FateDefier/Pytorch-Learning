@@ -21,15 +21,15 @@
 
 ```
 Pytorch-Learning/
-├── 1. Linear_model(Numpy).py              # NumPy 手写线性回归
-├── 2. Linear_model(Torch).py             # PyTorch 版线性回归
-├── 3. Stochastic_Gradient_Decent.py      # 随机梯度下降（手写）
-├── 4. Batch_Gradient_Decent.py           # 批量梯度下降（手写）
-├── 5. Back_Propagation.py                # 反向传播与 autograd
-├── 6. BP_Practice.py                     # 反向传播实战（二次模型）
-├── 7. Logistic_Regression(Classification).py  # 二分类 + Sigmoid
-├── 8. Multiple_Dimentional_Logistic_Regression.py  # 多维逻辑回归 + 激活函数对比
-├── 9. Softmax_Classifier(Multi-class).py # 多分类 + Softmax + 全连接网络
+├── 01. Linear_model(Numpy).py              # NumPy 手写线性回归
+├── 02. Linear_model(Torch).py             # PyTorch 版线性回归
+├── 03. Stochastic_Gradient_Decent.py      # 随机梯度下降（手写）
+├── 04. Batch_Gradient_Decent.py           # 批量梯度下降（手写）
+├── 05. Back_Propagation.py                # 反向传播与 autograd
+├── 06. BP_Practice.py                     # 反向传播实战（二次模型）
+├── 07. Logistic_Regression(Classification).py  # 二分类 + Sigmoid
+├── 08. Multiple_Dimentional_Logistic_Regression.py  # 多维逻辑回归 + 激活函数对比
+├── 09. Softmax_Classifier(Multi-class).py # 多分类 + Softmax + 全连接网络
 ├── 10. Dataset_and_DataLoader.py         # 自定义数据集与 DataLoader
 ├── 11. Convolutional_Neural_Network.py   # 卷积神经网络（CNN）
 ├── 12. Residual_Net.py                   # 残差网络（ResNet）
@@ -51,25 +51,25 @@ Pytorch-Learning/
 
 | # | 文件 | 学什么 | 亮点 |
 |---|------|--------|------|
-| 1 | `1. Linear_model(Numpy).py` | 线性回归纯 NumPy 实现、MSE 损失、3D 可视化 | 理解"训练循环"的底层机制 |
-| 2 | `2. Linear_model(Torch).py` | PyTorch 版线性回归、`nn.Module`、`MSELoss`、`optim.SGD` | 从手写过渡到框架 |
+| 1 | `01. Linear_model(Numpy).py` | 线性回归纯 NumPy 实现、MSE 损失、3D 可视化 | 理解"训练循环"的底层机制 |
+| 2 | `02. Linear_model(Torch).py` | PyTorch 版线性回归、`nn.Module`、`MSELoss`、`optim.SGD` | 从手写过渡到框架 |
 
 ### 第二阶段：梯度下降与反向传播（文件 3-6）
 
 | # | 文件 | 学什么 | 亮点 |
 |---|------|--------|------|
-| 3 | `3. Stochastic_Gradient_Decent.py` | 随机梯度下降手写实现，**参数更新公式** `θ ← θ − lr·∇J` | 每个样本更新一次权重 |
-| 4 | `4. Batch_Gradient_Decent.py` | 批量梯度下降手写实现 | 全量数据计算梯度，对比 SGD |
-| 5 | `5. Back_Propagation.py` | PyTorch 自动求导（`autograd`）、计算图 | 告别手算梯度 |
-| 6 | `6. BP_Practice.py` | 反向传播实战：`y = w₁x² + w₂x + b` | 多参数 + autograd 联合训练 |
+| 3 | `03. Stochastic_Gradient_Decent.py` | 随机梯度下降手写实现，**参数更新公式** `θ ← θ − lr·∇J` | 每个样本更新一次权重 |
+| 4 | `04. Batch_Gradient_Decent.py` | 批量梯度下降手写实现 | 全量数据计算梯度，对比 SGD |
+| 5 | `05. Back_Propagation.py` | PyTorch 自动求导（`autograd`）、计算图 | 告别手算梯度 |
+| 6 | `06. BP_Practice.py` | 反向传播实战：`y = w₁x² + w₂x + b` | 多参数 + autograd 联合训练 |
 
 ### 第三阶段：分类问题（文件 7-9）
 
 | # | 文件 | 学什么 | 数据集 |
 |---|------|--------|--------|
-| 7 | `7. Logistic_Regression(Classification).py` | 二分类、Sigmoid 激活、BCELoss、决策边界可视化 | 合成数据（3 个样本） |
-| 8 | `8. Multiple_Dimentional_Logistic_Regression.py` | 多维逻辑回归、**7 种激活函数对比实验**（Sigmoid/ReLU/Tanh/LeakyReLU/ELU/Swish/Softplus） | 糖尿病数据集 (8→1) |
-| 9 | `9. Softmax_Classifier(Multi-class).py` | 多分类、Softmax、CrossEntropyLoss、**5 层全连接网络**（784→512→256→128→64→10） | MNIST（手写数字） |
+| 7 | `07. Logistic_Regression(Classification).py` | 二分类、Sigmoid 激活、BCELoss、决策边界可视化 | 合成数据（3 个样本） |
+| 8 | `08. Multiple_Dimentional_Logistic_Regression.py` | 多维逻辑回归、**7 种激活函数对比实验**（Sigmoid/ReLU/Tanh/LeakyReLU/ELU/Swish/Softplus） | 糖尿病数据集 (8→1) |
+| 9 | `09. Softmax_Classifier(Multi-class).py` | 多分类、Softmax、CrossEntropyLoss、**5 层全连接网络**（784→512→256→128→64→10） | MNIST（手写数字） |
 
 ### 第四阶段：数据处理与工程化（文件 10）
 
@@ -158,14 +158,16 @@ Embedding(vocab_size→100) → BiGRU(100→100, num_layers=2)
 
 ## 环境要求
 
+我的电脑没有GPU，说一下的CPU版本，现在已经会用kaggle上免费的GPU了，哈哈😂。
+
 | 依赖 | 版本 | 用途 |
 |------|------|------|
-| **Python** | ≥ 3.8 | 运行环境 |
-| **PyTorch** | ≥ 1.7 | 核心深度学习框架 |
-| **torchvision** | ≥ 0.8 | 数据集下载（MNIST）与图像变换 |
-| **NumPy** | ≥ 1.19 | 数值计算（部分文件手写实现用） |
-| **Pandas** | ≥ 1.2 | CSV 数据加载（糖尿病数据集） |
-| **Matplotlib** | ≥ 3.3 | 损失曲线、决策边界、3D 可视化 |
+| **Python** | 3.10.19 | 运行环境 |
+| **PyTorch** | 2.5.1 | 核心深度学习框架 |
+| **torchvision** | 0.20.1 | 数据集下载（MNIST）与图像变换 |
+| **NumPy** | 2.2.6 | 数值计算（部分文件手写实现用） |
+| **Pandas** | 2.3.3 | CSV 数据加载（糖尿病数据集） |
+| **Matplotlib** | 3.10.7 | 损失曲线、决策边界、3D 可视化 |
 
 安装命令：
 
@@ -186,8 +188,8 @@ cd Pytorch-Learning
 pip install torch torchvision numpy pandas matplotlib
 
 # 3. 按编号顺序运行
-python "1. Linear_model(Numpy).py"
-python "2. Linear_model(Torch).py"
+python "01. Linear_model(Numpy).py"
+python "02. Linear_model(Torch).py"
 # ...
 ```
 
