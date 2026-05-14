@@ -169,10 +169,11 @@ Embedding(vocab_size→100) → BiGRU(100→100, num_layers=2)
 | **Pandas** | 2.3.3 | CSV 数据加载（糖尿病数据集） |
 | **Matplotlib** | 3.10.7 | 损失曲线、决策边界、3D 可视化 |
 
-安装命令：
+安装命令(依次执行)：
 
 ```bash
-pip install torch torchvision numpy pandas matplotlib
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+pip install numpy pandas matplotlib
 ```
 
 ---
